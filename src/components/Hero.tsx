@@ -16,7 +16,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
               Criamos <span className="gradient-text">Experiências Digitais</span> que Transformam
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-lg">
+            <p className="text-p md:text-xl text-gray-300 max-w-lg">
               Transformando negócios através de design inovador de websites e soluções estratégicas de marketing digital.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
