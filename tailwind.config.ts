@@ -64,11 +64,14 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					purple: '#5928e5',
+					purple: '#8E54E9',
+					purple_light: '#9b87f5',
+					blue: '#4776E6',
 					orange: '#ff7f50',
 					teal: '#20c997',
 					light: '#f8f9fa',
-					dark: '#212529',
+					dark: '#1A1F2C',
+					gray: '#8E9196',
 				}
 			},
 			borderRadius: {
@@ -107,6 +110,10 @@ export default {
 			},
 			fontFamily: {
 				'inter': ['Inter', 'sans-serif'],
+			},
+			backgroundImage: {
+				'gradient-primary': 'linear-gradient(to right, #4776E6, #8E54E9)',
+				'gradient-dark': 'linear-gradient(to right, #1A1F2C, #2C3140)',
 			}
 		}
 	},

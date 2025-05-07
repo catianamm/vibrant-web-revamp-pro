@@ -27,38 +27,38 @@ const Navbar = () => {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white bg-opacity-95 shadow-md py-3"
+          ? "bg-brand-dark/90 backdrop-blur-md shadow-md py-3"
           : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center">
-            <span className="text-2xl font-bold text-brand-purple">Vibrant</span>
+            <span className="text-2xl font-bold gradient-text">Vibrant</span>
           </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <a href="#home" className="hover:text-brand-purple transition-colors font-medium">
+            <a href="#home" className="hover:text-brand-purple_light transition-colors font-medium text-white">
               Home
             </a>
-            <a href="#services" className="hover:text-brand-purple transition-colors font-medium">
-              Services
+            <a href="#services" className="hover:text-brand-purple_light transition-colors font-medium text-white">
+              Serviços
             </a>
-            <a href="#portfolio" className="hover:text-brand-purple transition-colors font-medium">
-              Portfolio
+            <a href="#portfolio" className="hover:text-brand-purple_light transition-colors font-medium text-white">
+              Portfólio
             </a>
-            <a href="#about" className="hover:text-brand-purple transition-colors font-medium">
-              About
+            <a href="#about" className="hover:text-brand-purple_light transition-colors font-medium text-white">
+              Sobre
             </a>
-            <a href="#contact" className="hover:text-brand-purple transition-colors font-medium">
-              Contact
+            <a href="#contact" className="hover:text-brand-purple_light transition-colors font-medium text-white">
+              Contato
             </a>
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-brand-purple hover:bg-brand-purple/90">
-              Get Started
+            <Button className="bg-gradient-primary hover:opacity-90">
+              Comece Agora
             </Button>
           </div>
 
@@ -66,7 +66,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 focus:outline-none"
+              className="text-white focus:outline-none"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -75,45 +75,45 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg animate-fade-in">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-brand-dark/95 backdrop-blur-md shadow-lg animate-fade-in">
             <div className="flex flex-col p-4 space-y-3">
               <a
                 href="#home"
-                className="py-2 px-4 hover:bg-gray-100 rounded-md"
+                className="py-2 px-4 hover:bg-white/5 rounded-md text-white"
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </a>
               <a
                 href="#services"
-                className="py-2 px-4 hover:bg-gray-100 rounded-md"
+                className="py-2 px-4 hover:bg-white/5 rounded-md text-white"
                 onClick={() => setIsOpen(false)}
               >
-                Services
+                Serviços
               </a>
               <a
                 href="#portfolio"
-                className="py-2 px-4 hover:bg-gray-100 rounded-md"
+                className="py-2 px-4 hover:bg-white/5 rounded-md text-white"
                 onClick={() => setIsOpen(false)}
               >
-                Portfolio
+                Portfólio
               </a>
               <a
                 href="#about"
-                className="py-2 px-4 hover:bg-gray-100 rounded-md"
+                className="py-2 px-4 hover:bg-white/5 rounded-md text-white"
                 onClick={() => setIsOpen(false)}
               >
-                About
+                Sobre
               </a>
               <a
                 href="#contact"
-                className="py-2 px-4 hover:bg-gray-100 rounded-md"
+                className="py-2 px-4 hover:bg-white/5 rounded-md text-white"
                 onClick={() => setIsOpen(false)}
               >
-                Contact
+                Contato
               </a>
-              <Button className="bg-brand-purple hover:bg-brand-purple/90">
-                Get Started
+              <Button className="bg-gradient-primary hover:opacity-90">
+                Comece Agora
               </Button>
             </div>
           </div>
