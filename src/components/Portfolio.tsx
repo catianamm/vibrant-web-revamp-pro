@@ -60,7 +60,7 @@ const Portfolio = () => {
     <section id="portfolio" className="py-16 bg-[#0c0c0c]">
       <div className="container mx-auto px-4">
         <div className="flex justify-center mb-16">
-          <Button variant="outline" className="rounded-full text-lg font-medium bg-white text-black hover:bg-purple border-none">
+          <Button variant="outline" className="rounded-full text-lg font-medium bg-white text-black hover:bg-blue border-none">
             Nossos Projetos
           </Button>
         </div>
