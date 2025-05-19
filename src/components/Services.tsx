@@ -1,4 +1,3 @@
-
 import { 
   LayoutGrid, 
   Search, 
@@ -44,14 +43,12 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="section-padding bg-brand-dark/80">
-      <div className="container mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Nossos Serviços</h2>
-          <div className="h-1 w-20 bg-gradient-primary mx-auto mb-6"></div>
-          <p className="text-gray-300">
-            Fornecemos soluções digitais abrangentes para ajudar seu negócio a prosperar no mundo online.
-          </p>
+    <section id="services" className="py-16 bg-black relative">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-center mb-12">
+          <Button variant="outline" className="rounded-full text-lg font-medium bg-white text-black hover:bg-white/90 border-none">
+            O que oferecemos
+          </Button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -74,4 +71,5 @@ const Services = () => {
   );
 };
 
+import { Button } from "@/components/ui/button";
 export default Services;

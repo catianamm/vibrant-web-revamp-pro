@@ -27,39 +27,29 @@ const Navbar = () => {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-brand-dark/90 backdrop-blur-md shadow-md py-3"
+          ? "bg-black/80 backdrop-blur-md py-3"
           : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center">
-            <span className="text-2xl font-bold gradient-text">Vibrant</span>
+            <span className="text-2xl font-bold gradient-text">
+              <img src="/lovable-uploads/173bf0f8-6ff7-4b32-a6f1-bcdd55e6502d.png" alt="VibrantSs" className="h-12" />
+            </span>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            <a href="#home" className="hover:text-brand-purple_light transition-colors font-medium text-white">
-              Home
-            </a>
-            <a href="#services" className="hover:text-brand-purple_light transition-colors font-medium text-white">
+          <div className="hidden md:flex space-x-4">
+            <a href="#services" className="px-4 py-2 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors">
               Serviços
             </a>
-            <a href="#portfolio" className="hover:text-brand-purple_light transition-colors font-medium text-white">
-              Portfólio
+            <a href="#portfolio" className="px-4 py-2 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors">
+              Projetos
             </a>
-            <a href="#about" className="hover:text-brand-purple_light transition-colors font-medium text-white">
-              Sobre
+            <a href="#about" className="px-4 py-2 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors">
+              Quem Somos
             </a>
-            <a href="#contact" className="hover:text-brand-purple_light transition-colors font-medium text-white">
-              Contato
-            </a>
-          </div>
-
-          <div className="hidden md:block">
-            <Button className="bg-gradient-primary hover:opacity-90">
-              Comece Agora
-            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -75,46 +65,29 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-brand-dark/95 backdrop-blur-md shadow-lg animate-fade-in">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-md shadow-lg animate-fade-in">
             <div className="flex flex-col p-4 space-y-3">
               <a
-                href="#home"
-                className="py-2 px-4 hover:bg-white/5 rounded-md text-white"
-                onClick={() => setIsOpen(false)}
-              >
-                Home
-              </a>
-              <a
                 href="#services"
-                className="py-2 px-4 hover:bg-white/5 rounded-md text-white"
+                className="px-4 py-2 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Serviços
               </a>
               <a
                 href="#portfolio"
-                className="py-2 px-4 hover:bg-white/5 rounded-md text-white"
+                className="px-4 py-2 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Portfólio
+                Projetos
               </a>
               <a
                 href="#about"
-                className="py-2 px-4 hover:bg-white/5 rounded-md text-white"
+                className="px-4 py-2 rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Sobre
+                Quem Somos
               </a>
-              <a
-                href="#contact"
-                className="py-2 px-4 hover:bg-white/5 rounded-md text-white"
-                onClick={() => setIsOpen(false)}
-              >
-                Contato
-              </a>
-              <Button className="bg-gradient-primary hover:opacity-90">
-                Comece Agora
-              </Button>
             </div>
           </div>
         )}

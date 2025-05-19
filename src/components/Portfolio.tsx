@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
@@ -58,44 +57,11 @@ const Portfolio = () => {
     : portfolioItems.filter(item => item.category === activeCategory);
 
   return (
-    <section id="portfolio" className="section-padding">
-      <div className="container mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Work</h2>
-          <div className="h-1 w-20 bg-brand-purple mx-auto mb-6"></div>
-          <p className="text-gray-600">
-            Browse our recent projects and see how we've helped businesses grow.
-          </p>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <Button
-            variant={activeCategory === "all" ? "default" : "outline"}
-            onClick={() => setActiveCategory("all")}
-            className={activeCategory === "all" ? "bg-brand-purple" : ""}
-          >
-            All Projects
-          </Button>
-          <Button
-            variant={activeCategory === "web" ? "default" : "outline"}
-            onClick={() => setActiveCategory("web")}
-            className={activeCategory === "web" ? "bg-brand-purple" : ""}
-          >
-            Web Design
-          </Button>
-          <Button
-            variant={activeCategory === "marketing" ? "default" : "outline"}
-            onClick={() => setActiveCategory("marketing")}
-            className={activeCategory === "marketing" ? "bg-brand-purple" : ""}
-          >
-            Marketing
-          </Button>
-          <Button
-            variant={activeCategory === "branding" ? "default" : "outline"}
-            onClick={() => setActiveCategory("branding")}
-            className={activeCategory === "branding" ? "bg-brand-purple" : ""}
-          >
-            Branding
+    <section id="portfolio" className="py-16 bg-[#0c0c0c]">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-center mb-16">
+          <Button variant="outline" className="rounded-full text-lg font-medium bg-white text-black hover:bg-white/90 border-none">
+            Nossos Projetos
           </Button>
         </div>
 
@@ -115,6 +81,12 @@ const Portfolio = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16 flex justify-center">
+          <Button variant="outline" className="rounded-full text-lg font-medium bg-white text-black hover:bg-white/90 border-none">
+            Peça um orçamento
+          </Button>
         </div>
       </div>
     </section>
