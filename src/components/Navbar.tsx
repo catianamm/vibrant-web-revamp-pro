@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center">
             <span className="text-2xl font-bold gradient-text">
-              <img src="https://vibrantss.com/wp-content/uploads/2025/05/logo_vibrants_texto.png" alt="VibrantSs" className="h-24" />
+              <img src="https://vibrantss.com/wp-content/uploads/2025/05/logo_vibrants_texto.png" alt="VibrantSs" className="h-16" />
             </span>
           </a>
 
