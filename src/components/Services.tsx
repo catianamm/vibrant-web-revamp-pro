@@ -64,16 +64,10 @@ const Services = () => {
                 </CardDescription>
               </CardContent>
             </Card>
-              <div className="mt-16 flex justify-center">
-          <Button variant="outline" className="rounded-full text-lg font-medium bg-white text-black hover:bg-white/90 border-none">
-            Peça um orçamento
-          </Button>
-        </div>
           ))}
         </div>
       </div>
     </section>
-    
   );
 };
 
