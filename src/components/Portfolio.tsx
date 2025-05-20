@@ -84,7 +84,7 @@ const Portfolio = () => {
         </div>
 
         <div className="mt-16 flex justify-center">
-          <Button variant="outline" className="rounded-full text-lg font-medium bg-white text-black hover:bg-white/90 border-none">
+          <Button variant="outline" className="rounded-full text-lg font-medium bg-white text-black hover:text-violet border-none">
             Peça um orçamento
           </Button>
         </div>
