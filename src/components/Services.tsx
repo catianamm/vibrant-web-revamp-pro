@@ -65,6 +65,9 @@ const Services = () => {
               </CardContent>
             </Card>
           ))}
+          <Button variant="outline" className="rounded-full text-lg font-medium bg-white text-black hover:bg-white/90 border-none">
+            Peça um orçamento
+          </Button>
         </div>
       </div>
     </section>
