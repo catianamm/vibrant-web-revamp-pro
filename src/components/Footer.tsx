@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="flex justify-center md:justify-start">
-            <img src="/lovable-uploads/173bf0f8-6ff7-4b32-a6f1-bcdd55e6502d.png" alt="VibrantSs" className="h-32" />
+            <img src="https://vibrantss.com/wp-content/uploads/2025/05/vibrantss_logo.png" alt="VibrantSs" className="h-32" />
           </div>
           
           <div>
