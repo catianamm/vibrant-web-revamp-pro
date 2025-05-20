@@ -12,9 +12,9 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-6">Páginas</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-black-400 hover:text-violet-400 transition-colors">Home</a></li>
-              <li><a href="#services" className="text-black-400 hover:text-violet transition-colors">Serviços</a></li>
-              <li><a href="#portfolio" className="text-black-400 hover:text-violet transition-colors">Projetos</a></li>
-              <li><a href="#about" className="text-black-400 hover:text-violet transition-colors">Sobre Nós</a></li>
+              <li><a href="#services" className="text-black-400 hover:text-violet-400 transition-colors">Serviços</a></li>
+              <li><a href="#portfolio" className="text-black-400 hover:text-violet-400 transition-colors">Projetos</a></li>
+              <li><a href="#about" className="text-black-400 hover:text-violet-400 transition-colors">Sobre Nós</a></li>
             </ul>
           </div>
           
