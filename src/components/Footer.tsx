@@ -5,16 +5,16 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="flex justify-center md:justify-start">
-            <img src="https://vibrantss.com/wp-content/uploads/2025/05/vibrantss_logo.png" alt="VibrantSs" className="h-32" />
+            <img src="https://vibrantss.com/wp-content/uploads/2025/05/logo_vibrants_texto.png" alt="VibrantSs" className="h-32" />
           </div>
           
           <div>
             <h3 className="text-lg font-bold mb-6">Páginas</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Serviços</a></li>
-              <li><a href="#portfolio" className="text-gray-400 hover:text-white transition-colors">Projetos</a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">Sobre Nós</a></li>
+              <li><a href="#" className="text-black-400 hover:text-white transition-colors">Home</a></li>
+              <li><a href="#services" className="text-black-400 hover:text-purple transition-colors">Serviços</a></li>
+              <li><a href="#portfolio" className="text-black-400 hover:text-purple transition-colors">Projetos</a></li>
+              <li><a href="#about" className="text-black-400 hover:text-purple transition-colors">Sobre Nós</a></li>
             </ul>
           </div>
           
