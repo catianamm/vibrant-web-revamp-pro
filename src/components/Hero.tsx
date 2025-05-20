@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-20 pb-20 md:pt-32 md:pb-32 overflow-hidden bg-gradient-to-b from-[#1c1532] via-[#3a1254] to-[#1c1532] relative">
+    <section id="home" className="pt-20 pb-20 md:pt-32 md:pb-32 overflow-hidden bg-gradient-to-b from-[#0099FF] via-[#B300FF] to-[#FF0090] relative">
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center">
           <div className="space-y-6 max-w-3xl mx-auto">
