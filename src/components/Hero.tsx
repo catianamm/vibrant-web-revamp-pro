@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="flex flex-col items-center text-center">
           <div className="space-y-6 max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
-              Tenha seu site feito pela <span className="text-gradient-primary">VibrantSs</span>
+              Tenha seu site feito pela VibrantSs
             </h1>
             <p className="text-lg md:text-xl text-white/90">
               Faremos o seu site do seu jeito
