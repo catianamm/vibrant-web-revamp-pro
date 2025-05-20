@@ -7,7 +7,9 @@ import {
   Code 
 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 const services = [
   {
     icon: <LayoutGrid className="h-10 w-10 text-brand-purple_light" />,
@@ -65,11 +67,16 @@ const Services = () => {
               </CardContent>
             </Card>
           ))}
+                  <div className="mt-16 flex justify-center">
+          <Button variant="outline" className="rounded-full text-lg font-medium bg-white text-black hover:bg-white/90 border-none">
+            Peça um orçamento
+          </Button>
+        </div>
         </div>
       </div>
     </section>
   );
 };
 
-import { Button } from "@/components/ui/button";
+
 export default Services;
