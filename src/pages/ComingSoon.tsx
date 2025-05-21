@@ -1,9 +1,7 @@
 
 import { useState } from "react";
-import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Link } from "react-router-dom";
 import { useToast } from "@/components/ui/use-toast";
 
 const ComingSoon = () => {
@@ -40,38 +38,27 @@ const ComingSoon = () => {
 
       {/* Main Content */}
       <div className="flex flex-col items-center justify-center text-center px-4 max-w-lg mx-auto">
-        <div className="relative mb-8">
-          <div className="bg-white/10 rounded-full h-48 w-48 md:h-64 md:w-64 backdrop-blur-lg flex items-center justify-center">
-            <div className="bg-white/20 rounded-full h-36 w-36 md:h-48 md:w-48 flex items-center justify-center">
-              <div className="text-purple-300 text-5xl">:)</div>
-            </div>
-          </div>
-          <div className="absolute top-0 right-0 transform translate-x-1/4 -translate-y-1/4">
-            <div className="text-brand-purple text-4xl">•</div>
-          </div>
-          <div className="absolute bottom-5 left-0 transform -translate-x-1/2">
-            <div className="text-white text-2xl">•</div>
-          </div>
-          <div className="absolute top-10 right-0 transform translate-x-full">
-            <div className="h-6 w-1 bg-brand-purple rotate-45"></div>
-          </div>
-          <div className="absolute top-4 right-0 transform translate-x-full">
-            <div className="h-6 w-1 bg-brand-purple"></div>
-          </div>
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="bg-brand-purple rounded-md w-32 h-6">
-              <div className="flex gap-1 items-center h-full pl-2">
-                <div className="bg-white rounded-full h-2 w-2"></div>
-                <div className="bg-white rounded-full h-2 w-2"></div>
-                <div className="bg-white rounded-full h-2 w-2"></div>
-              </div>
-            </div>
-          </div>
+        {/* Custom Image */}
+        <div className="mb-10">
+          <img 
+            src="/lovable-uploads/fdf2a5f4-da74-49a0-ba0b-2c7dea090b7c.png" 
+            alt="Robot Face" 
+            className="w-64 h-64 animate-bounce-subtle"
+          />
         </div>
 
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Em Breve</h1>
-        <p className="text-lg text-white/80 mb-10">
-          Estamos preparando algo incrível para você. Fique ligado!
+        {/* Gradient Outline Text */}
+        <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-brand-purple to-brand-blue border-2 border-transparent bg-clip-border" style={{
+          WebkitTextStroke: '2px transparent',
+          WebkitBackgroundClip: 'text',
+          backgroundClip: 'text',
+          backgroundImage: 'linear-gradient(to right, #8E54E9, #4776E6)'
+        }}>
+          Em Breve
+        </h1>
+        
+        <p className="text-xl text-white/90 mb-12 max-w-md">
+          Estamos criando algo revolucionário para transformar sua experiência digital. Prepare-se para uma jornada incrível!
         </p>
 
         {/* Email Form */}
@@ -111,14 +98,6 @@ const ComingSoon = () => {
             </div>
           </a>
         </div>
-
-        {/* Button to return home */}
-        <Link to="/">
-          <Button variant="outline" className="rounded-full text-lg font-medium bg-brand-purple text-white hover:bg-brand-purple/90 border-none flex items-center gap-2">
-            <ArrowLeft size={18} />
-            <span>Voltar ao Início</span>
-          </Button>
-        </Link>
       </div>
 
       {/* Footer */}
