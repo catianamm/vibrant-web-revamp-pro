@@ -116,7 +116,7 @@ const ComingSoon = () => {
         <Link to="/">
           <Button variant="outline" className="rounded-full text-lg font-medium bg-brand-purple text-white hover:bg-brand-purple/90 border-none flex items-center gap-2">
             <ArrowLeft size={18} />
-            <span>Back to Home</span>
+            <span>Voltar ao Início</span>
           </Button>
         </Link>
       </div>
