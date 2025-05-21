@@ -39,13 +39,7 @@ const ComingSoon = () => {
       {/* Main Content */}
       <div className="flex flex-col items-center justify-center text-center px-4 max-w-lg mx-auto">
         {/* Custom Image */}
-        <div className="mb-10">
-          <img 
-            src="/lovable-uploads/fdf2a5f4-da74-49a0-ba0b-2c7dea090b7c.png" 
-            alt="Robot Face" 
-            className="w-64 h-64 animate-bounce-subtle"
-          />
-        </div>
+        
 
         {/* Gradient Outline Text */}
         <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-brand-purple to-brand-blue border-2 border-transparent bg-clip-border" style={{
